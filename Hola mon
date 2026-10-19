@@ -1,12 +1,9 @@
-nom = input("Escribe tu nombre: \n")
+nom = input("Com et dius?\n ")
+year = int(input("En quin any vas néixer?\n "))
+edat = 2026 - year
 
-print("Hola",nom)
+print("Hola", nom, "tens", edat, "anys.")
 
-num = 1
-print(num)
+print("Hola Mundo")
 
-num = 2, 5
-print(num)
 
-num = "ups"
-print(num)
