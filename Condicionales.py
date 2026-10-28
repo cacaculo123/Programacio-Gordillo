@@ -6,6 +6,7 @@ n2 = input("Pon otro numero\n")
 if n1.isdigit() and n2.isdigit():
     n1 = int(n1)
     n2 = int(n2)
+
     operacion = input("Que operacion quieres hacer? (suma, resta, multiplicacion, division, division entera, potencia, modúl)\n")
     #Suma
     if operacion == "suma":
@@ -13,7 +14,7 @@ if n1.isdigit() and n2.isdigit():
 
     #Resta
     elif operacion == "resta":
-       resta = input("Quieres restar el primer numero del segundo o al reves? (1 o 2)\n")
+       resta = input(f"Quieres hacer {n1} - {n2} o al revés? (1 o 2)\n")
        if resta == "1":
            print("La resta de los dos numeros es:", n1-n2)
        elif resta == "2":
@@ -26,7 +27,7 @@ if n1.isdigit() and n2.isdigit():
 
     #Division
     elif operacion == "division":
-        divison = input("Quieres dividir el primer numero del segundo o al reves? (1 o 2)\n")
+        divison = input(f"Quieres hacer {n1} / {n2} o al revés? (1 o 2)\n")
         if divison == "1":
             print("La division de los dos numeros es:", n1/n2)
         elif divison == "2":
@@ -36,7 +37,7 @@ if n1.isdigit() and n2.isdigit():
 
     #Division entera
     elif operacion == "division entera":
-        divison_entera = input("Quieres dividir el primer numero del segundo o al reves? (1 o 2)\n")
+        divison_entera = input(f"Quieres hacer {n1} // {n2} o al revés? (1 o 2)\n")
         if divison_entera == "1":
             print("La division entera de los dos numeros es:", n1//n2)
         elif divison_entera == "2":
