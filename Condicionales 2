@@ -29,7 +29,7 @@ if n1.replace("-", "", 1).replace(".", "", 1).isdigit() and n2.replace("-", "", 
     elif operacion == "division":
         divison = input(f"Quieres hacer {n1} / {n2} o al revés? (así: 1 o al réves: 2)\n")
         if divison == "1":
-            if n1 == 0:
+            if n1 == 0 or n2 == 0:
                 print("Los números deben ser positivos")
             else:
                 print("La division de los dos numeros es:", n1/n2)
@@ -37,7 +37,7 @@ if n1.replace("-", "", 1).replace(".", "", 1).isdigit() and n2.replace("-", "", 
             aux = n1
             n1 = n2
             n2 = aux
-            if n1 == 0:
+            if n1 == 0 or n2 == 0:
                 print("Los números deben ser positivos")
             else:
                 print("La division de los dos numeros es:", n1/n2)
@@ -48,7 +48,7 @@ if n1.replace("-", "", 1).replace(".", "", 1).isdigit() and n2.replace("-", "", 
     elif operacion == "division entera":
         divison_entera = input(f"Quieres hacer {n1} // {n2} o al revés? (así: 1 o al réves: 2)\n")
         if divison_entera == "1":
-            if n1 == 0:
+            if n1 == 0 or n2 == 0:
                 print("Los números deben ser positivos")
             else:
                 print("La division entera de los dos numeros es:", n1//n2)
@@ -56,7 +56,7 @@ if n1.replace("-", "", 1).replace(".", "", 1).isdigit() and n2.replace("-", "", 
             aux = n1
             n1 = n2
             n2 = aux
-            if n1 == 0:
+            if n1 == 0 or n2 == 0:
                 print("Los números deben ser positivos")
             else:
                 print("La division entera de los dos numeros es:", n1//n2)
@@ -69,14 +69,16 @@ if n1.replace("-", "", 1).replace(".", "", 1).isdigit() and n2.replace("-", "", 
             if potencia == "1":
                     if n1 == 0 and n2 <= 0:
                         print("No se puede hacer la potencia")
-                    print("La potencia de los dos numeros es:", n1**n2)
+                    else:
+                        print("La potencia de los dos numeros es:", n1**n2)
             elif potencia == "2":
                     aux = n1
                     n1 = n2
                     n2 = aux
                     if n1 == 0 and n2 <= 0:
                         print("No se puede hacer la potencia")
-                    print("La potencia de los dos numeros es:", n2**n1)
+                    else:
+                        print("La potencia de los dos numeros es:", n2**n1)
             else:
                 print("Opción no válida")
 
