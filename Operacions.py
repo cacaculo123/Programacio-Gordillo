@@ -59,7 +59,7 @@ print("Potencia:", x ** y)
 print("Porcentaje:", x % y)
 
 
-#Operaciones Con Rextos
+#Operaciones Con textos
 t1 = input("Pon un texto\n")
 t2 = input("Pon otro texto\n")
 
