@@ -1,4 +1,4 @@
-'''
+
 lista = [2, "hola", 3.5]
 
 print(lista[0])
@@ -20,9 +20,12 @@ del lista[1]
 print(lista)
 
 lista[2] = ""
-print(lista)  
-'''
+print(lista) 
 
+lista.insert(1, "adios")
+print(lista)
+
+'''
 dni = input("Pon tu DNI\n")
 
 if dni.isdigit() and len(dni) == 8:
@@ -34,3 +37,4 @@ if dni.isdigit() and len(dni) == 8:
     print(lDni)
 else:
     print("DNI incorrecto")
+'''
